@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JWT Angular App</title>
+
+    <!--<link href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.css" rel="stylesheet">-->
+
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap-superhero.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+</head>
+
+<body>
+    <!--<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">JWT Angular App</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>-->
+    <div ng-controller="NavbarCtrl" class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"><i class="ion-ios7-pulse-strong"></i> Python Flask SPA</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/#/">Home</a></li>
+            <li ng-if="isAuthenticated()"><a href="/#/profile">Profile</a></li>
+        </ul>
+        <ul ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">
+            <li><a href="/#/login">Login</a></li>
+            <li><a href="/#/signup">Sign up</a></li>
+        </ul>
+        <ul ng-if="isAuthenticated()" class="nav navbar-nav pull-right">
+            <li><a href="/#/logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+        <footer></footer>
+    </div>
+
+    <script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/static/bower_components/angular/angular.min.js"></script>
+    <script src="/static/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/static/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/static/bower_components/satellizer/satellizer.min.js"></script>
+    <script src="/static/bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="/static/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="/static/bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="/static/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="/static/app/app.js"></script>
+    <script src="/static/app/directives/passwordStrength.js"></script>
+    <script src="/static/app/directives/passwordMatch.js"></script>
+    <script src="/static/app/controllers/login.js"></script>
+    <script src="/static/app/controllers/signup.js"></script>
+    <script src="/static/app/controllers/logout.js"></script>
+    <script src="/static/app/controllers/profile.js"></script>
+    <script src="/static/app/controllers/navbar.js"></script>
+    <script src="/static/app/services/account.js"></script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

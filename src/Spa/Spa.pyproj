@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>68631ccb-baba-4c6f-a114-29aaead67818</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>Spa</Name>
+    <RootNamespace>Spa</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <WebBrowserPort>49258</WebBrowserPort>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <NameOfLastUsedPublishProfile>JwtSampleFrontEnd</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="Spa\__init__.py" />
+    <Compile Include="Spa\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Spa\" />
+    <Folder Include="Spa\static\" />
+    <Folder Include="Spa\static\app\controllers\" />
+    <Folder Include="Spa\static\app\directives\" />
+    <Folder Include="Spa\static\app\partials\" />
+    <Folder Include="Spa\static\app\services\" />
+    <Folder Include="Spa\static\bower_components\" />
+    <Folder Include="Spa\static\bower_components\angular-animate\" />
+    <Folder Include="Spa\static\bower_components\angular-messages\" />
+    <Folder Include="Spa\static\bower_components\angular-resource\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\dist\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\dist\modules\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\affix\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\alert\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\aside\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\button\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\collapse\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\datepicker\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\dropdown\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\helpers\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\modal\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\navbar\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\popover\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\scrollspy\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\select\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\tab\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\timepicker\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\tooltip\" />
+    <Folder Include="Spa\static\bower_components\angular-strap\src\typeahead\" />
+    <Folder Include="Spa\static\bower_components\angular-ui-router\" />
+    <Folder Include="Spa\static\bower_components\angular-ui-router\api\" />
+    <Folder Include="Spa\static\bower_components\angular-ui-router\release\" />
+    <Folder Include="Spa\static\bower_components\angular-ui-router\src\" />
+    <Folder Include="Spa\static\bower_components\angular\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\dist\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\dist\css\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\dist\fonts\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\dist\js\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\fonts\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\grunt\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\js\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\less\" />
+    <Folder Include="Spa\static\bower_components\bootstrap\less\mixins\" />
+    <Folder Include="Spa\static\bower_components\jquery\" />
+    <Folder Include="Spa\static\bower_components\jquery\dist\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\ajax\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\ajax\var\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\attributes\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\core\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\core\var\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\css\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\css\var\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\data\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\data\var\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\effects\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\event\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\exports\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\manipulation\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\manipulation\var\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\queue\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\sizzle\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\sizzle\dist\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\traversing\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\traversing\var\" />
+    <Folder Include="Spa\static\bower_components\jquery\src\var\" />
+    <Folder Include="Spa\static\bower_components\satellizer\" />
+    <Folder Include="Spa\static\content\" />
+    <Folder Include="Spa\static\app\" />
+    <Folder Include="Spa\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JwtSampleFrontEnd.pubxml" />
+    <Content Include="requirements.txt" />
+    <Content Include="Spa\static\app\app.js" />
+    <Content Include="Spa\static\app\controllers\login.js" />
+    <Content Include="Spa\static\app\controllers\logout.js" />
+    <Content Include="Spa\static\app\controllers\navbar.js" />
+    <Content Include="Spa\static\app\controllers\profile.js" />
+    <Content Include="Spa\static\app\controllers\signup.js" />
+    <Content Include="Spa\static\app\directives\passwordMatch.js" />
+    <Content Include="Spa\static\app\directives\passwordStrength.js" />
+    <Content Include="Spa\static\app\partials\home.html" />
+    <Content Include="Spa\static\app\partials\login.html" />
+    <Content Include="Spa\static\app\partials\profile.html" />
+    <Content Include="Spa\static\app\partials\signup.html" />
+    <Content Include="Spa\static\app\services\account.js" />
+    <Content Include="Spa\static\bower_components\angular-animate\.bower.json" />
+    <Content Include="Spa\static\bower_components\angular-animate\angular-animate.js" />
+    <Content Include="Spa\static\bower_components\angular-animate\angular-animate.min.js" />
+    <Content Include="Spa\static\bower_components\angular-animate\angular-animate.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-animate\bower.json" />
+    <Content Include="Spa\static\bower_components\angular-animate\index.js" />
+    <Content Include="Spa\static\bower_components\angular-animate\package.json" />
+    <Content Include="Spa\static\bower_components\angular-animate\README.md" />
+    <Content Include="Spa\static\bower_components\angular-messages\.bower.json" />
+    <Content Include="Spa\static\bower_components\angular-messages\angular-messages.js" />
+    <Content Include="Spa\static\bower_components\angular-messages\angular-messages.min.js" />
+    <Content Include="Spa\static\bower_components\angular-messages\angular-messages.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-messages\bower.json" />
+    <Content Include="Spa\static\bower_components\angular-messages\index.js" />
+    <Content Include="Spa\static\bower_components\angular-messages\package.json" />
+    <Content Include="Spa\static\bower_components\angular-messages\README.md" />
+    <Content Include="Spa\static\bower_components\angular-resource\.bower.json" />
+    <Content Include="Spa\static\bower_components\angular-resource\angular-resource.js" />
+    <Content Include="Spa\static\bower_components\angular-resource\angular-resource.min.js" />
+    <Content Include="Spa\static\bower_components\angular-resource\angular-resource.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-resource\bower.json" />
+    <Content Include="Spa\static\bower_components\angular-resource\index.js" />
+    <Content Include="Spa\static\bower_components\angular-resource\package.json" />
+    <Content Include="Spa\static\bower_components\angular-resource\README.md" />
+    <Content Include="Spa\static\bower_components\angular-strap\.bower.json" />
+    <Content Include="Spa\static\bower_components\angular-strap\.bowerrc" />
+    <Content Include="Spa\static\bower_components\angular-strap\.editorconfig" />
+    <Content Include="Spa\static\bower_components\angular-strap\.gitattributes" />
+    <Content Include="Spa\static\bower_components\angular-strap\.gitignore" />
+    <Content Include="Spa\static\bower_components\angular-strap\.jshintrc" />
+    <Content Include="Spa\static\bower_components\angular-strap\.npmignore" />
+    <Content Include="Spa\static\bower_components\angular-strap\.travis.yml" />
+    <Content Include="Spa\static\bower_components\angular-strap\angular-strap.nuspec" />
+    <Content Include="Spa\static\bower_components\angular-strap\bower.json" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\angular-strap.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\angular-strap.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\angular-strap.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\angular-strap.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\angular-strap.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\affix.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\affix.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\affix.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\alert.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\alert.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\alert.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\alert.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\alert.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\aside.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\aside.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\aside.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\aside.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\aside.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\button.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\button.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\button.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\collapse.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\collapse.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\collapse.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\date-formatter.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\date-formatter.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\date-formatter.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\date-parser.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\date-parser.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\date-parser.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\datepicker.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\datepicker.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\datepicker.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\datepicker.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\datepicker.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\debounce.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\debounce.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\debounce.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dimensions.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dimensions.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dimensions.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dropdown.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dropdown.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dropdown.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dropdown.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\dropdown.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\modal.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\modal.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\modal.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\modal.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\modal.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\navbar.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\navbar.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\navbar.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\parse-options.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\parse-options.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\parse-options.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\popover.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\popover.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\popover.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\popover.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\popover.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\raf.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\raf.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\raf.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\scrollspy.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\scrollspy.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\scrollspy.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\select.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\select.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\select.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\select.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\select.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tab.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tab.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tab.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tab.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tab.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\timepicker.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\timepicker.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\timepicker.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\timepicker.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\timepicker.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tooltip.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tooltip.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tooltip.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tooltip.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\tooltip.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\typeahead.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\typeahead.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\typeahead.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\typeahead.tpl.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\dist\modules\typeahead.tpl.min.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\gulpfile.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\LICENSE.md" />
+    <Content Include="Spa\static\bower_components\angular-strap\ngfactory.json" />
+    <Content Include="Spa\static\bower_components\angular-strap\package.json" />
+    <Content Include="Spa\static\bower_components\angular-strap\README.md" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\affix\affix.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\alert\alert.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\alert\alert.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\aside\aside.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\aside\aside.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\button\button.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\collapse\collapse.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\datepicker\datepicker.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\datepicker\datepicker.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\dropdown\dropdown.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\dropdown\dropdown.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\helpers\date-formatter.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\helpers\date-parser.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\helpers\debounce.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\helpers\dimensions.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\helpers\parse-options.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\helpers\raf.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\modal\modal.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\modal\modal.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\module.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\navbar\navbar.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\popover\popover.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\popover\popover.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\scrollspy\scrollspy.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\select\select.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\select\select.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\tab\tab.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\tab\tab.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\timepicker\timepicker.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\timepicker\timepicker.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\tooltip\tooltip.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\tooltip\tooltip.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\typeahead\typeahead.js" />
+    <Content Include="Spa\static\bower_components\angular-strap\src\typeahead\typeahead.tpl.html" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\.bower.json" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\api\angular-ui-router.d.ts" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\bower.json" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\CHANGELOG.md" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\CONTRIBUTING.md" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\LICENSE" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\README.md" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\release\angular-ui-router.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\release\angular-ui-router.min.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\common.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\resolve.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\state.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\stateDirectives.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\stateFilters.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\templateFactory.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\urlMatcherFactory.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\urlRouter.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\view.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\viewDirective.js" />
+    <Content Include="Spa\static\bower_components\angular-ui-router\src\viewScroll.js" />
+    <Content Include="Spa\static\bower_components\angular\.bower.json" />
+    <Content Include="Spa\static\bower_components\angular\angular-csp.css" />
+    <Content Include="Spa\static\bower_components\angular\angular.js" />
+    <Content Include="Spa\static\bower_components\angular\angular.min.js" />
+    <Content Include="Spa\static\bower_components\angular\angular.min.js.gzip" />
+    <Content Include="Spa\static\bower_components\angular\angular.min.js.map" />
+    <Content Include="Spa\static\bower_components\angular\bower.json" />
+    <Content Include="Spa\static\bower_components\angular\index.js" />
+    <Content Include="Spa\static\bower_components\angular\package.json" />
+    <Content Include="Spa\static\bower_components\angular\README.md" />
+    <Content Include="Spa\static\bower_components\bootstrap\.bower.json" />
+    <Content Include="Spa\static\bower_components\bootstrap\bower.json" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\dist\js\npm.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Spa\static\bower_components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Spa\static\bower_components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Spa\static\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Spa\static\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Spa\static\bower_components\bootstrap\Gruntfile.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\.jshintrc" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\configBridge.json" />
+    <Content Include="Spa\static\bower_components\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\.jscsrc" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\.jshintrc" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\affix.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\alert.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\button.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\carousel.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\collapse.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\dropdown.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\modal.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\popover.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\scrollspy.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\tab.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\tooltip.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\js\transition.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\.csscomb.json" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\.csslintrc" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\alerts.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\badges.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\bootstrap.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\breadcrumbs.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\button-groups.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\buttons.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\carousel.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\close.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\code.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\component-animations.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\dropdowns.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\forms.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\glyphicons.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\grid.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\input-groups.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\jumbotron.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\labels.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\list-group.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\media.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\alerts.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\buttons.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\center-block.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\forms.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\gradients.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\grid.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\image.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\labels.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\list-group.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\opacity.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\pagination.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\panels.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\reset-text.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\resize.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\size.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\table-row.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\modals.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\navbar.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\navs.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\normalize.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\pager.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\pagination.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\panels.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\popovers.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\print.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\progress-bars.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\responsive-embed.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\responsive-utilities.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\scaffolding.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\tables.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\theme.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\thumbnails.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\tooltip.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\type.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\utilities.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\variables.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\less\wells.less" />
+    <Content Include="Spa\static\bower_components\bootstrap\LICENSE" />
+    <Content Include="Spa\static\bower_components\bootstrap\package.js" />
+    <Content Include="Spa\static\bower_components\bootstrap\package.json" />
+    <Content Include="Spa\static\bower_components\bootstrap\README.md" />
+    <Content Include="Spa\static\bower_components\jquery\.bower.json" />
+    <Content Include="Spa\static\bower_components\jquery\bower.json" />
+    <Content Include="Spa\static\bower_components\jquery\dist\jquery.js" />
+    <Content Include="Spa\static\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="Spa\static\bower_components\jquery\dist\jquery.min.map" />
+    <Content Include="Spa\static\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\jsonp.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\load.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\parseJSON.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\parseXML.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\script.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\var\nonce.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\var\rquery.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\ajax\xhr.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\attributes.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\attributes\attr.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\attributes\classes.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\attributes\prop.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\attributes\support.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\attributes\val.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\callbacks.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\core.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\core\access.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\core\init.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\core\parseHTML.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\core\ready.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\addGetHookIf.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\curCSS.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\defaultDisplay.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\support.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\swap.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\var\cssExpand.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\var\getStyles.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\var\isHidden.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\var\rmargin.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\data.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\data\accepts.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\data\Data.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\data\var\data_priv.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\data\var\data_user.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\deferred.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\deprecated.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\dimensions.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\effects.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\effects\animatedSelector.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\effects\Tween.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\event.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\event\ajax.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\event\alias.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\event\support.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\exports\amd.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\exports\global.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\intro.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\jquery.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\manipulation.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\manipulation\support.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\offset.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\outro.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\queue.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\queue\delay.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\selector-native.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\selector-sizzle.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\selector.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\serialize.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="Spa\static\bower_components\jquery\src\traversing.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\traversing\findFilter.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\arr.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\class2type.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\concat.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\hasOwn.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\indexOf.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\pnum.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\push.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\rnotwhite.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\slice.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\strundefined.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\support.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\var\toString.js" />
+    <Content Include="Spa\static\bower_components\jquery\src\wrap.js" />
+    <Content Include="Spa\static\bower_components\satellizer\.bower.json" />
+    <Content Include="Spa\static\bower_components\satellizer\.npmignore" />
+    <Content Include="Spa\static\bower_components\satellizer\bower.json" />
+    <Content Include="Spa\static\bower_components\satellizer\LICENSE" />
+    <Content Include="Spa\static\bower_components\satellizer\README.md" />
+    <Content Include="Spa\static\bower_components\satellizer\satellizer.js" />
+    <Content Include="Spa\static\bower_components\satellizer\satellizer.min.js" />
+    <Content Include="Spa\static\content\bootstrap-superhero.min.css" />
+    <Content Include="Spa\static\content\site.css" />
+    <Content Include="Spa\templates\index.html" />
+    <Content Include="Spa\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{47c38c52-ca44-4ca9-9d2d-64ba12478864}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
