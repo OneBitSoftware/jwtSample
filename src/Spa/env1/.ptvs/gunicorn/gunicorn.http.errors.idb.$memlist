@@ -1,0 +1,13 @@
+InvalidRequestLine
+InvalidProxyLine
+InvalidHeaderName
+InvalidHTTPVersion
+LimitRequestLine
+ForbiddenProxyRequest
+NoMoreData
+InvalidRequestMethod
+ParseException
+LimitRequestHeaders
+ChunkMissingTerminator
+InvalidHeader
+InvalidChunkSize
