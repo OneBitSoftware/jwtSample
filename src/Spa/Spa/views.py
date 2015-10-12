@@ -1,6 +1,7 @@
-﻿from flask import render_template, jsonify, request, abort
+﻿from flask import render_template, jsonify, request, abort, make_response
 from Spa import app
 import requests
+from random import randint
 
 API_URL = 'https://jwtsample.azurewebsites.net' #https://jwtsample.azurewebsites.net, http://localhost:28229
 
@@ -39,3 +40,53 @@ def profile():
         return r.text
     except:
         abort(503) #Service Unavailable
+
+@app.route('/manifest')
+def cache_manifest():
+    manifest = """CACHE MANIFEST
+#1.0
+
+CACHE:
+/
+/static/bower_components/jquery/dist/jquery.min.js
+/static/bower_components/bootstrap/dist/js/bootstrap.min.js
+/static/bower_components/angular/angular.min.js
+/static/bower_components/angular-ui-router/release/angular-ui-router.min.js
+/static/bower_components/angular-animate/angular-animate.min.js
+/static/bower_components/satellizer/satellizer.min.js
+/static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2
+/static/bower_components/angular-messages/angular-messages.min.js
+/static/bower_components/angular-resource/angular-resource.min.js
+/static/bower_components/angular-strap/dist/angular-strap.min.js
+/static/bower_components/angular-strap/dist/angular-strap.tpl.min.js
+/static/app/app.js
+/static/app/directives/passwordStrength.js
+/static/app/directives/passwordMatch.js
+/static/app/controllers/navbar.js
+/static/app/controllers/login.js
+/static/app/controllers/signup.js
+/static/app/controllers/logout.js
+/static/app/controllers/profile.js
+/static/app/services/dbService.js
+/static/app/services/syncService.js
+/static/app/services/userService.js
+/static/app/services/utilsService.js
+
+/static/content/bootstrap-superhero.min.css
+/static/content/site.css
+
+/static/app/partials/home.html
+/static/app/partials/login.html
+/static/app/partials/profile.html
+/static/app/partials/signup.html
+
+
+NETWORK:
+/api
+
+    """
+    
+    #manifest = manifest + '# ' + str(randint(0,999))
+    resp = make_response(manifest)
+    resp.headers['Content-type'] = 'text/cache-manifest'
+    return resp;

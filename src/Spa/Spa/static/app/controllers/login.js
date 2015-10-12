@@ -1,41 +1,25 @@
 angular.module('MyApp')
-  .controller('LoginCtrl', function($scope, $alert, $auth) {
-    $scope.login = function() {
-      $auth.login({ email: $scope.email, password: $scope.password })
-        .then(function() {
-          $alert({
-            content: 'You have successfully logged in',
-            animation: 'fadeZoomFadeDown',
-            type: 'material',
-            duration: 3
-          });
-        })
-        .catch(function(response) {
-          $alert({
-            content: response.data.message,
-            animation: 'fadeZoomFadeDown',
-            type: 'material',
-            duration: 3
-          });
-        });
+  .controller('LoginCtrl', function ($scope, $alert, $auth, userService) {
+
+      var successMessage = function () {
+          userService.getCurrentUser();
+          console.log('success');
+      }
+
+      var errorMessage = function (error) {
+          if (error.status === 401) {
+              console.log('error 401');
+          } else {
+              console.log('error');
+          }
+      }
+
+    $scope.login = function () {
+      $auth.login({ email: $scope.email, password: $scope.password }).then(successMessage, errorMessage);
     };
+
     $scope.authenticate = function(provider) {
-      $auth.authenticate(provider)
-        .then(function() {
-          $alert({
-            content: 'You have successfully logged in',
-            animation: 'fadeZoomFadeDown',
-            type: 'material',
-            duration: 3
-          });
-        })
-        .catch(function(response) {
-          $alert({
-            content: response.data ? response.data.message : response,
-            animation: 'fadeZoomFadeDown',
-            type: 'material',
-            duration: 3
-          });
-        });
+      $auth.authenticate(provider).then(successMessage, errorMessage);
     };
+
   });

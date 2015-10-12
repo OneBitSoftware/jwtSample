@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="MyApp">
+<html ng-app="MyApp" manifest="/manifest">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,25 +56,28 @@
         <footer></footer>
     </div>
 
-    <script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/static/bower_components/angular/angular.min.js"></script>
-    <script src="/static/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="/static/bower_components/angular-animate/angular-animate.min.js"></script>
-    <script src="/static/bower_components/satellizer/satellizer.min.js"></script>
-    <script src="/static/bower_components/angular-messages/angular-messages.min.js"></script>
-    <script src="/static/bower_components/angular-resource/angular-resource.min.js"></script>
-    <script src="/static/bower_components/angular-strap/dist/angular-strap.min.js"></script>
-    <script src="/static/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-    <script src="/static/app/app.js"></script>
-    <script src="/static/app/directives/passwordStrength.js"></script>
-    <script src="/static/app/directives/passwordMatch.js"></script>
-    <script src="/static/app/controllers/login.js"></script>
-    <script src="/static/app/controllers/signup.js"></script>
-    <script src="/static/app/controllers/logout.js"></script>
-    <script src="/static/app/controllers/profile.js"></script>
-    <script src="/static/app/controllers/navbar.js"></script>
-    <script src="/static/app/services/account.js"></script>
+    <script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../static/bower_components/angular/angular.min.js"></script>
+    <script src="../static/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../static/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../static/bower_components/satellizer/satellizer.min.js"></script>
+    <script src="../static/bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="../static/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="../static/bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="../static/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="../static/app/app.js"></script>
+    <script src="../static/app/directives/passwordStrength.js"></script>
+    <script src="../static/app/directives/passwordMatch.js"></script>
+    <script src="../static/app/controllers/login.js"></script>
+    <script src="../static/app/controllers/signup.js"></script>
+    <script src="../static/app/controllers/logout.js"></script>
+    <script src="../static/app/controllers/profile.js"></script>
+    <script src="../static/app/controllers/navbar.js"></script>
+    <script src="../static/app/services/dbService.js"></script>
+    <script src="../static/app/services/syncService.js"></script>
+    <script src="../static/app/services/userService.js"></script>
+    <script src="../static/app/services/utilsService.js"></script>
 
     {% block scripts %}{% endblock %}
 </body>

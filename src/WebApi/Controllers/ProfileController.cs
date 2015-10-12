@@ -16,7 +16,7 @@ namespace WebApi.Controllers
         public ActionResult Get()
         {
             var user = (ProfilePrincipal)Context.User;
-            return new JsonResult(new { name = user.Identity.Name, email = user.Email, picture = user.Picture});
+            return new JsonResult(new { id = user.Id, name = user.Identity.Name, email = user.Email, picture = user.Picture});
         }
 
         [HttpGet("{id}")]

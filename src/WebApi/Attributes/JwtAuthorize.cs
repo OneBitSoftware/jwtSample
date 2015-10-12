@@ -27,7 +27,7 @@ namespace WebApi.Attributes
             {
                 var jsonPayload = JsonWebToken.Decode(jwt, JwtConstants.SecretKey);
                 var user = JsonConvert.DeserializeObject<JwtPayload>(jsonPayload).Sub;
-                context.HttpContext.User = new ProfilePrincipal(new GenericIdentity(user.Name), user.Roles, user.Email, user.Picture);
+                context.HttpContext.User = new ProfilePrincipal(new GenericIdentity(user.Name), user.Id, user.Roles, user.Email, user.Picture);
 
                 //check roles
                 if (Roles != null)
